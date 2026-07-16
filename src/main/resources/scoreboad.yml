@@ -1,0 +1,61 @@
+# ==========================================
+# German Bedwars Scoreboard Configuration
+# ==========================================
+
+placeholders:
+  bed_alive: "&a&l✔"       
+  bed_destroyed: "&c&l✘"    
+
+scoreboards:
+
+  # 1. Main Server Lobby Scoreboard
+  lobby:
+    title: "&c&lBEDWARS &8┃ &7Lobby"  
+    lines:
+      - "&8&m------------------------" 
+      - "&6Profile:"                   
+      - " &8➥ &bName: &a%player_name%"  
+      - " &8➥ &dRank: &5%player_rank%"  
+      - ""
+      - "&9Global Stats:"              
+      - " &8➥ &cKills: &7%stats_kills%" 
+      - " &8➥ &bWins: &7%stats_wins%"   
+      - "&8&m------------------------" 
+      - "&dplay.yourserver.net"        
+
+  # 2. In-Game Waiting Lobby Scoreboard (Before match starts)
+  waiting:
+    title: "&5&lWAITING &8┃ &7Game"    
+    lines:
+      - "&8&m------------------------" 
+      - "&6Arena Info:"                
+      - " &8➥ &bMap: &a%arena_name%"    
+      - " &8➥ &dMode: &5MLG Rush"       
+      - ""
+      - "&9Players:"                   
+      - " &8➥ &aCount: &7%players_count%&8/&c%players_max%" 
+      - ""
+      - "&bStarting In:"               
+      - " &8➥ &a%time_left% &7seconds"  
+      - "&8&m------------------------" 
+      - "&dplay.yourserver.net"        
+
+  # 3. In-Game Bedwars Scoreboard (Actual Match with 8 Teams)
+  ingame:
+    title: "&c&lGERMAN BW &8┃ &7%arena_name%" 
+    lines:
+      - "&8&m------------------------" 
+      - "&6Teams:"                     
+      - " &c&lR &8┃ &cRed: %red_bed_status%"       # Red Team
+      - " &a&lG &8┃ &aGreen: %green_bed_status%"   # Green Team
+      - " &9&lB &8┃ &9Blue: %blue_bed_status%"     # Blue Team
+      - " &6&lO &8┃ &6Orange: %orange_bed_status%" # Orange Team
+      - " &d&lP &8┃ &dPink: %pink_bed_status%"     # Pink Team
+      - " &5&lP &8┃ &5Purple: %purple_bed_status%" # Purple Team
+      - " &b&lA &8┃ &bAqua: %aqua_bed_status%"     # Aqua Team
+      - " &7&lG &8┃ &7Gray: %gray_bed_status%"     # Gray Team
+      - ""
+      - "&dMatch Stats:"               
+      - " &8➥ &5Kills: &7%match_kills%" 
+      - "&8&m------------------------" 
+      - "&6teamhole.de style"

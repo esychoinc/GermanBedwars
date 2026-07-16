@@ -1,0 +1,97 @@
+# =======================================================
+#   German Bedwars & MLG Rush - Main Configuration
+#   Style: BedWars1058 | Version: 1.8.8
+# =======================================================
+
+server-settings:
+  server-id: "BW-01"
+  bungee-cord: false
+  fallback-server: "hub" # Match sheshe ba leave korle kothay jabe
+  
+# =======================================================
+#   Knockback System (German Style)
+#   Anti.ac / teamhole.de style fast and smooth KB
+# =======================================================
+knockback-settings:
+  enabled: true
+  # Hit delay komale pvp onek fast hobe (Default 20, 17-18 is best for MLG)
+  no-damage-ticks-delay: 18 
+  
+  stick:
+    horizontal-multiplier: 2.2 # Samner dike koto jore push korbe
+    vertical-multiplier: 1.4   # Uporer dike koto tuku uthbe
+    sprint-modifier: 1.2       # Sprint korle extra knockback
+  
+  sword:
+    horizontal-multiplier: 1.0
+    vertical-multiplier: 1.0
+    sprint-modifier: 1.1
+
+# =======================================================
+#   Gameplay & MLG Rush Settings
+# =======================================================
+gameplay-settings:
+  mlg-rush-mode: true
+  fast-respawn: true
+  respawn-time-seconds: 1     # Anti.ac style instant respawn
+  max-build-height: 120
+  allow-block-break: false    # Only player placed blocks break kora jabe
+  anti-fall-damage: true      # MLG/Block clutch er shomoy fall damage bondho
+  void-y-level: 0             # Ei level er niche gele player mara jabe
+
+# =======================================================
+#   Item Spawners (Generators)
+# =======================================================
+generators:
+  bronze:
+    delay-seconds: 1
+    amount-per-spawn: 1
+    item-material: BRICK
+  iron:
+    delay-seconds: 10
+    amount-per-spawn: 1
+    item-material: IRON_INGOT
+  gold:
+    delay-seconds: 25
+    amount-per-spawn: 1
+    item-material: GOLD_INGOT
+
+# =======================================================
+#   Teams Configuration (Your 8 Colors)
+# =======================================================
+teams:
+  Red:
+    color-code: "&c"
+    wool-data: 14   # 1.8.8 e red wool er data
+  Green:
+    color-code: "&a"
+    wool-data: 5
+  Blue:
+    color-code: "&9"
+    wool-data: 11
+  Orange:
+    color-code: "&6"
+    wool-data: 1
+  Pink:
+    color-code: "&d"
+    wool-data: 6
+  Purple:
+    color-code: "&5"
+    wool-data: 10
+  Aqua:
+    color-code: "&b"
+    wool-data: 3
+  Gray:
+    color-code: "&7"
+    wool-data: 8
+
+# =======================================================
+#   Arena System (Like bw1058)
+#   Niche apni in-game /bw setup diye arenagulo save korben
+# =======================================================
+arenas:
+  # '/bw setup' korle automatically eikhane data save hobe.
+  # Example:
+  # map1:
+  #   world: "rush_map"
+  #   lobby-spawn: "x,y,z,yaw,pitch"

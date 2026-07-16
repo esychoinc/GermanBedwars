@@ -1,0 +1,23 @@
+name: GermanBedwars
+version: 1.0.0
+main: dev.esycho.bwg.GermenBedwars
+description: Fast-paced German Bedwars and MLG Rush mechanics like teamholy.de
+author: Esycho
+
+commands:
+  bw:
+    description: Arena setup and plugin management command.
+    aliases: [bedwars, bwg]
+    permission: bwg.admin
+    permission-message: "&cYou don't have permission to use this command!"
+    usage: "/bw <setup|lobby|arena>"
+    
+  stats:
+    description: Check your MLG Rush / Bedwars stats.
+    aliases: [bwstats, mystats]
+    usage: "/stats"
+
+permissions:
+  bwg.admin:
+    description: Allows setup and configuration of the Bedwars plugin.
+    default: op
